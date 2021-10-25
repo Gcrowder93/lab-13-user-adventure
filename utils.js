@@ -1,3 +1,7 @@
+export function findById(items, id){
+    for (let )
+}
+
 export function generateUser(formData){
 //     return {completed: {}}
 //     gold: 0,
