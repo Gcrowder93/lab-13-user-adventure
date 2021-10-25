@@ -1,8 +1,11 @@
-// import functions and grab DOM elements
+// console.log(window.location.search);
+// const params = new URLSearchParams(window.location.search);
 
-// initialize global state
+// const color = params.get('color');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+// const mySquare = document.getElementById('square');
+// mySquare.classList.add(color);
+
+// on form submit, create FormData object
+// pass to generateUser function
+// save to localStorage
