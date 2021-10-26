@@ -1,17 +1,14 @@
-import { generateUser, setUser } from './utils.js';
+import { setUser, generateUser } from './utils.js';
 
-// grab user form
 const userForm = document.getElementById('user-form');
-
-// on form submit
-userForm.addEventListener('submit', function(e) {
-
+console.log(userForm);
+userForm.addEventListener('submit', (e) => {
     e.preventDefault();
-  //
     const formData = new FormData(userForm);
-
-    const userObj = generateUser(formData);
-
-    setUser(userObj);
-    window.location.replace('../map.js');
+    const user = generateUser(formData);
+    setUser(user);
+    window.location.replace('./map');
 });
+
+console.log(generateUser);
+console.log(setUser);

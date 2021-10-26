@@ -8,13 +8,32 @@
     <title>Quest Page</title>
 </head>
 <body>
-    <h1 id="quest-title">Choose your Quest</h1>
-    <img id="quest-image" src="" alt=""> 
-<!-- img input title should match data img title -->
-    <p id="quest-description"></p>
-    <form id="quest-choices"></form><br>
+    <header>
+        <div class="profile">
+            <img id="characters">
+            <span id="name"></span>
+            HP:<span id="hp"></span><br>
+            GOLD: <span id="gold"></span>
+        </div>
+    </header>
 
-    <button id="dragon-button">Continue</button>
+    <main>
+        <hr>
+        <h2 id="title"></h2>
+        <p>
+        <img id="quest-image" src="../data/quest-data.js" alt=""> 
+        </p>
+        
+        <p id="quest-description"></p>
+        <form id="quest-choices"></form>
+        <hr>
+        </form>
+        <button>Choose</button>
+        <section id="result" class="hidden">
+        </section>
+    </main><br>
+        <a href="../map">Back to Map</a>
     <script type="module" src="./quest.js"></script>
+    
 </body>
 </html>

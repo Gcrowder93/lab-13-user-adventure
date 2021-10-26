@@ -8,21 +8,22 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <title>Adventure Quest</title>
 </head>
 <h1>Do you have what is takes to help?</h1>
 <body>
-    <form id="user-form"></form>
-        <label for="name">
-            What shall the towns people call you?
-            <input name="name" type="text">
+    <form id="user-form">
+        <p class="text-prompt">
+        <label for="name">What shall the towns people call you?</label>
+            <input id="name" name="name" type="text" required>
+            </p>
             <hr>
         </label>
         <legend>Pick Your Character</legend>
-        <p id="characters">
+        <!-- <form id="user-form"> -->
             <label>Mage
                 <input type="radio" name="race" required value="mage">
                 <img src="./assets/wiseoldman.png">
@@ -35,7 +36,10 @@
                 <input type="radio" name="race" required value="knight">
                 <img src="./assets/knight.png">
             </label>
-            <br><button id="submit">Start your Adventure</button>
+            <br>
+        <button id="submit">Start your Adventure</button>
+    </form>
     <script type="module" src="./app.js"></script>
 </body>
 </html>
+

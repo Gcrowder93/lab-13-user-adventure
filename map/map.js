@@ -1,9 +1,6 @@
 import quests from '../data/quest-data.js';
-// import quest data
-// get map-links element from html
+import { getUser } from '../utils.js';
 const mapLinks = document.getElementById('map-links');
-console.log(mapLinks);
-// loop through each quest
 for (let quest of quests){
 
 // generate an <a> for each quest with href = "quest?id=<questionId>"
@@ -14,7 +11,6 @@ for (let quest of quests){
     a.href = `../quest/?id=${quest.id}`;
     a.textContent = quest.title;
 
-    // append the link to the map-links element
     mapLinks.appendChild(a);
 }
 

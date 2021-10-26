@@ -1,1 +1,1 @@
-import './example.test.js';
+import '../test/utils.test.js';

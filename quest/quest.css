@@ -4,11 +4,22 @@ body {
     align-items: center;
     text-align: center;
     background-color: darkslategray;
-/* this is changing all of it */
 }
 
 #button {
     width: 75px;
     height: 25px;
 }
-/* same with this ^^ */
+
+/* main {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.choice {
+    display: block;
+    list-style: none;
+    padding: 5px;
+} */
