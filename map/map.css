@@ -1,4 +1,11 @@
 body {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    background-color: rgb(117, 131, 139);
+    background-image: url(../assets/osrsmap.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    
 }
