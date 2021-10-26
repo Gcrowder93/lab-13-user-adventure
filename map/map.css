@@ -9,3 +9,9 @@ body {
     background-position: center top;
     
 }
+
+.quests {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}

@@ -5,7 +5,7 @@ const dragon = {
         top: '17%',
         left: '37%'
     },
-    image: ' ',
+    image: 'elvarg.png',
     description: `
     watch out for that big ol' dragon
     `,
@@ -71,7 +71,7 @@ const village = {
 
 const shrine = {
     id: 'shrine',
-    title: 'An Ancient Shine',
+    title: 'An Ancient Shrine',
     map: {
         top: '31%',
         right: '75%'

@@ -8,10 +8,10 @@ const questData = findById(quests, params.get('id'));
 console.log(questData);
 // update all our HTML elements with the quest data
 
-const title = document.get('quest-title');
+const title = document.getElementById('quest-title');
 title.textContent = questData.title;
-const img = document.get('quest-image');
-img.src = `../assets/quests/${questData.image}`;
+const img = document.getElementById('quest-image');
+img.src = `../assets/${questData.image}`;
 const description = document.getElementById('quest-description');
 description.textContent = questData.description;
 

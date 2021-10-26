@@ -21,8 +21,8 @@ export function generateUser(formData){
         completed: {},
         gold: 0,
         hp: 35, 
-        name: formData.get('chase'), // these are user objects
-        race: formData.get('mage'),
+        name: formData.get(), // these are user objects
+        race: formData.get(),
     };
 }
 
