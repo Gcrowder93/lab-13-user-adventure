@@ -36,12 +36,12 @@ const dragon = {
 
 const village = {
     id: 'village',
-    title: 'Varrock',
+    title: 'Town of Varrock',
     map: {
         top: '89%',
         left: '44%'
     },
-    image: ' ',
+    image: 'varrock.png',
     description: `You find yourself standing in the middle of a crowded village square..
     `,
     choices: [{
@@ -75,7 +75,7 @@ const shrine = {
     map: {
         top: '31%',
         right: '75%'
-    }, image: ' ',
+    }, image: 'shrine.png',
     description: `You head up the hill to an ancient shrine you've heard stories about.
     `,
     choices: [{
