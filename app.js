@@ -4,7 +4,7 @@ import { generateUser, setUser } from './utils.js';
 const userForm = document.getElementById('user-form');
 
 // on form submit
-userForm.addEventListener('submit', (e)=>{
+userForm.addEventListener('submit', function(e) {
 
     e.preventDefault();
   //
@@ -13,5 +13,5 @@ userForm.addEventListener('submit', (e)=>{
     const userObj = generateUser(formData);
 
     setUser(userObj);
-    window.location.replace('./map.js');
+    window.location.replace('../map.js');
 });

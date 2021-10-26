@@ -1,5 +1,4 @@
 import quests from '../data/quest-data.js';
-
 // import quest data
 // get map-links element from html
 const mapLinks = document.getElementById('map-links');
@@ -18,3 +17,4 @@ for (let quest of quests){
     // append the link to the map-links element
     mapLinks.appendChild(a);
 }
+

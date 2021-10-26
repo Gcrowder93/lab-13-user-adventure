@@ -3,9 +3,7 @@ import quests from '../data/quest-data.js';
 import { findById } from '../utils.js';
 // use search params to determine which quest to display
 const params = new URLSearchParams(window.location.search);
-console.log(params.get('id'));
 const questData = findById(quests, params.get('id'));
-console.log(questData);
 // update all our HTML elements with the quest data
 
 const title = document.getElementById('quest-title');
