@@ -8,6 +8,7 @@
     <title>Quest Page</title>
 </head>
 <body>
+    <form id="quest-choices">
     <header>
         <div class="profile">
             <img id="characters">
@@ -16,22 +17,20 @@
             GOLD: <span id="gold"></span>
         </div>
     </header>
-
     <main>
         <hr>
         <h2 id="title"></h2>
         <p>
         <img id="quest-image" src="../data/quest-data.js" alt=""> 
         </p>
-        
         <p id="quest-description"></p>
         <form id="quest-choices"></form>
         <hr>
-        </form>
-        <button>Choose</button>
         <section id="result" class="hidden">
-        </section>
-    </main><br>
+        </section>  
+    </main> 
+    <!-- <button>Choose</button> -->
+    <br>
         <a href="../map">Back to Map</a>
     <script type="module" src="./quest.js"></script>
     

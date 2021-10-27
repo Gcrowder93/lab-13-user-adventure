@@ -8,6 +8,14 @@ export function findById(array, id) {
     return null;
 }
 
+// export function findById(userObject){
+//     for (let item of items){
+//         if (item.id === id){
+//             return item;
+//         }
+//     }
+// }
+
 export function setUser(userObject){
     const userString = JSON.stringify(userObject);
     localStorage.setItem('USER', userString);

@@ -1,6 +1,10 @@
 
 import quests from '../data/quest-data.js';
 import { findById } from '../utils.js';
+import { getUser } from '../utils.js';
+import { setUser } from '../utils.js';
+import { scoreQuest } from '../utils.js';
+
 const searchParams = new URLSearchParams(window.location.search);
 const questData = findById(quests, searchParams.get('id'));
 
@@ -31,13 +35,15 @@ questChoices.append(button);
 
 questChoices.addEventListener('submit', (e)=>{
     e.preventDefault();
-    // const selectedId = document.querySelector('input[type="radio"]:checked');
-    // const choice = findById(questData.choice, selectedId);
-    // const user = getUser();
-    // scoreQuest(choice, questData.id, user);
-    // setUser;
+    const selectedId = document.querySelector('input[type="radio"]:checked');
+    const choice = findById(questData.choice, selectedId);
+    const user = getUser();
+    scoreQuest(choice, questData.id, user);
+    setUser;
 
 });
+
+
 
 
 

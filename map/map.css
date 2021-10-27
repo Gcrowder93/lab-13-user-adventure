@@ -4,10 +4,22 @@ body {
     text-align: center;
     background-color: rgb(117, 131, 139);
     background-image: url(../assets/osrsmap.png);
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center top;
-    
+    font-size: 18px;
+}
+
+a {
+    font-size: 20px;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color:violet;
 }
 
 /* .quests {
