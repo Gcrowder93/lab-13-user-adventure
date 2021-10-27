@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,8 +11,29 @@ body {
     font-size: 18px;
 }
 
+header {
+    margin: -7px;
+    margin-left: 55%; 
+}
+
+p#hp {
+    color: red;
+}
+
+p#gold {
+    color: gold;
+}
+
 a {
     font-size: 20px;
+}
+
+#map-links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+    height:calc(90vw * 642 / 900);
 }
 
 a:visited{
@@ -20,6 +42,16 @@ a:visited{
 
 a:hover{
     color:violet;
+}
+
+header {
+    margin: -7px;
+    margin-left: 55%; 
+}
+
+#user-image {
+    width: 50px;
+    height: 50px;
 }
 
 /* .quests {

@@ -1,3 +1,5 @@
+import quests from './data/quest-data.js';
+
 export function findById(items, id){
     for (let item of items){
         if (item.id === id){
@@ -49,9 +51,9 @@ export function createQuestLink(quest) {
     const link = document.createElement('a');
     link.classList.add('quest');
 
-    // const searchParams = new URLSearchParams();
-    // searchParams.set('id', quest.id);
-    // link.href = 'quest?' + searchParams.toString();
+    const searchParams = new URLSearchParams();
+    searchParams.set('id', quest.id);
+    link.href = 'quest?' + searchParams.toString();
     link.href = '../quest/?id=' + quest.id;
 
     link.style.top = quest.map.top;
@@ -73,19 +75,18 @@ export function createCompletedQuest(quest) {
     return span;
 }
 
-export function hasCompletedAllQuests(quests, user) {
-    // iterate through quests
-    for (let i = 0; i < quests.length; i++) {
-        const quest = quests[i];
-        // if any of the quests is incomplete
-        if (!user.completed[quest.id]) {
-            return false;
-        }
-    }
-
-    // if all of the quests are complete, we get this far and return true
-    return true;
-}
+// export function hasCompletedAllQuests(quests, user) {
+//     // iterate through quests
+//     for (let i = 0; i < quests.length; i++) {
+//         const quest = quests[i];
+//         // if any of the quests is incomplete
+//         if (!user.completed[quest.id]) {
+//             return false;
+//         }
+//     }
+//     // if all of the quests are complete, we get this far and return true
+//     return true;
+// }
 
 export function createChoice(choice) {
     const label = document.createElement('label');
@@ -113,4 +114,20 @@ export function loadProfile(){
     hp.textContent = user.hp;
     const gold = document.getElementById('user-gold');
     gold.textContent = user.gold;
+    const name = document.getElementById('start-name');
+    name.textContent = user.name;
 }
+
+export function hasCompletedAllQuests(userObject){
+    for (let quest of quests){
+        if (!userObject.completed[quest.id]){
+            return false;
+        }
+    }
+    return true;
+}
+
+export function isDead(user) {
+    return user.hp <= 0;
+}
+
