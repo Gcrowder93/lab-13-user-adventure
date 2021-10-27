@@ -1,20 +1,10 @@
-export function findById(array, id) {
-    for (let index = 0; index < array.length; index++) {
-        const item = array[index];
-        if (item.id === id) {
+export function findById(items, id){
+    for (let item of items){
+        if (item.id === id){
             return item;
         }
     }
-    return null;
 }
-
-// export function findById(userObject){
-//     for (let item of items){
-//         if (item.id === id){
-//             return item;
-//         }
-//     }
-// }
 
 export function setUser(userObject){
     const userString = JSON.stringify(userObject);
@@ -114,5 +104,3 @@ export function createChoice(choice) {
 
     return label;
 }
-
-console.log(createChoice);
