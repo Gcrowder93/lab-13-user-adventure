@@ -53,6 +53,8 @@ export function scoreQuest(choiceObject, questId, userObject){
     userObject.completed[questId] = true;
 }
 
+console.log(scoreQuest);
+
 export function createQuestLink(quest) {
     const link = document.createElement('a');
     link.classList.add('quest');
@@ -113,3 +115,4 @@ export function createChoice(choice) {
     return label;
 }
 
+console.log(createChoice);
