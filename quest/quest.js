@@ -31,23 +31,28 @@ questChoices.append(button);
 
 questChoices.addEventListener('submit', (e)=>{
     e.preventDefault();
-    e.preventDefault();
     const selectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findById(questData.choices, selectedRadio.value);
+    console.log(choice);
     const user = getUser();
+    console.log(user);
     scoreQuest(choice, questData.id, user);
     setUser(user);
+    console.log(user);
 
-    const questDetails = document.getElementById('quest-details');
-    questDetails.classList.add('hidden');
-    const questResults = document.getElementById('results');
+    const questDescription = document.getElementById('quest-description');
+    questDescription.classList.add('hidden');
+    console.log(questDescription);
+    const questResults = document.getElementById('result');
+    console.log(questResults);
     const resultP = document.createElement('p');
     resultP.textContent = choice.result;
+    console.log(resultP);
     const backLink = document.createElement('a');
-    backLink.href = '../map';
-    backLink.textContent = 'Back to Map';
+    // backLink.href = '../map';
+    // backLink.textContent = 'Back to Map';
     questResults.append(resultP, backLink);
-    questResults.className.remove('hidden');
+    questResults.classList.remove('hidden');
 
 });
 
