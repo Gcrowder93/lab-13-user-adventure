@@ -4,6 +4,8 @@ import { findById } from '../utils.js';
 import { getUser } from '../utils.js';
 import { setUser } from '../utils.js';
 import { scoreQuest } from '../utils.js';
+import { loadProfile } from '../utils.js';
+
 
 const searchParams = new URLSearchParams(window.location.search);
 const questData = findById(quests, searchParams.get('id'));
@@ -35,6 +37,7 @@ questChoices.addEventListener('submit', (e)=>{
     const choice = findById(questData.choices, selectedRadio.value);
     console.log(choice);
     const user = getUser();
+    loadProfile();
     console.log(user);
     scoreQuest(choice, questData.id, user);
     setUser(user);
@@ -56,6 +59,7 @@ questChoices.addEventListener('submit', (e)=>{
 
 });
 
+loadProfile();
 
     // const selectedId = document.querySelector('input[type="radio"]:checked');
     // const choice = findById(questData.choices, selectedId);

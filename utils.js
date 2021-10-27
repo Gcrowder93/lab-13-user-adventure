@@ -104,3 +104,13 @@ export function createChoice(choice) {
 
     return label;
 }
+
+export function loadProfile(){
+    const user = getUser();
+    const img = document.getElementById('user-image');
+    img.src = `../assets/${user.race}.png`;
+    const hp = document.getElementById('user-hp');
+    hp.textContent = user.hp;
+    const gold = document.getElementById('user-gold');
+    gold.textContent = user.gold;
+}
