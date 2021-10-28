@@ -1,4 +1,5 @@
 import quests from '../data/quest-data.js';
+import { loadProfile } from '../utils.js';
 
 export function hasCompletedAllQuests(userObject){
     for (let quest of quests){
@@ -8,3 +9,5 @@ export function hasCompletedAllQuests(userObject){
     }
     return true;
 }
+
+loadProfile();
