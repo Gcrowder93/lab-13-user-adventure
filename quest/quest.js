@@ -11,6 +11,7 @@ const searchParams = new URLSearchParams(window.location.search);
 const questData = findById(quests, searchParams.get('id'));
 // const title = document.getElementById('quest-title');
 // title.textContent = questData.title;
+
 const img = document.getElementById('quest-image');
 img.src = `../assets/${questData.image}`;
 const description = document.getElementById('quest-description');

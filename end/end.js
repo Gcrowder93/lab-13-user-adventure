@@ -12,8 +12,8 @@ import { loadProfile } from '../utils.js';
 export function isDead(user) {
     return user.hp <= 0;
 }
-
+loadProfile();
 // import { loadProfile } from '../utils.js';
 
-loadProfile();
+
 
